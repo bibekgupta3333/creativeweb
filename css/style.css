@@ -1,0 +1,276 @@
+@import url("https://fonts.googleapis.com/css2?family=Aclonica&display=swap");
+* {
+  margin: 0;
+}
+h1 {
+  margin-bottom: 10px;
+}
+:root {
+  --primary-color: #f1c11a;
+}
+
+.m-f {
+  font-family: "Aclonica", sans-serif;
+  text-transform: uppercase;
+}
+
+body {
+  background: url("../img/showcase-2.jpg") no-repeat center/cover;
+  background-attachment: fixed;
+  position: relative;
+}
+
+main {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.container {
+  width: 70%;
+  margin: 0 auto;
+}
+.btn {
+  display: inline-block;
+  background-color: transparent;
+  border: 3px solid white;
+  padding: 15px 35px;
+  font-weight: bolder;
+  text-decoration: none;
+  color: #fff;
+  margin-left: 3rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-fill {
+  background-color: #fff;
+  color: #000;
+}
+.btn-submit {
+  background-color: #000;
+}
+.btn-submit:hover {
+  background-color: #fff;
+  border: 1px solid #000;
+  color: #000;
+  transform: scale(1.05) rotate(1deg);
+}
+.btn-fill:hover {
+  background-color: var(--primary-color);
+  border-color: transparent;
+  transform: scale(1.05);
+}
+
+.btn-trans:hover {
+  background-color: var(--primary-color);
+  color: #000;
+  border-color: transparent;
+  transform: scale(1.05);
+}
+img {
+  padding-right: 15px;
+}
+/* header start */
+.header {
+  height: 100vh;
+  color: #fff;
+}
+
+.header-content {
+  padding-top: 40vh;
+  text-align: center;
+}
+
+.header-content h1,
+.intro-content h1 {
+  font-size: 42px;
+}
+.header-content h2 span {
+  color: var(--primary-color);
+  line-height: 100px;
+}
+
+/* header end */
+/* intro start */
+
+.intro {
+  background: #fff;
+  padding: 15vh 0;
+}
+
+.intro-content {
+  height: 50vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+.intro-content div {
+  width: 50%;
+}
+
+.intro-text p {
+  text-align: justify;
+  color: #555;
+  line-height: 30px;
+}
+/* intro end */
+/* services start */
+
+.services {
+  background-color: var(--primary-color);
+  height: 50vh;
+  clip-path: polygon(0 0, 15% 0, 50% 20%, 85% 0, 100% 0, 100% 100%, 0 100%);
+  margin-top: -15vh;
+  padding-top: 5vh;
+}
+.service-content {
+  height: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-content: center;
+}
+.bucket {
+  width: 30%;
+  margin-left: 3%;
+  color: #fff;
+  text-align: center;
+}
+
+.bucket p {
+  color: #000;
+  text-align: justify;
+  line-height: 1.4;
+}
+/* services end */
+/* contact start */
+.contact {
+  background: #fff;
+  height: 50vh;
+  margin-top: -5vh;
+  padding: 10vh 0;
+}
+.contact-section {
+  text-align: center;
+}
+.contact-section form div {
+  padding-bottom: 1rem;
+}
+form input,
+form textarea {
+  width: 100%;
+  text-align: center;
+}
+
+form input[type="submit"] {
+  width: 50%;
+}
+/* contact end */
+/* footer start */
+
+footer {
+  background-color: var(--primary-color);
+  text-align: center;
+  height: 15vh;
+  clip-path: polygon(0 0, 15% 0, 50% 20%, 85% 0, 100% 0, 100% 100%, 0 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -8vh;
+}
+/* footer end */
+
+/* mobile screen start */
+@media only screen and (max-width: 700px) {
+  .header {
+    height: 100vh;
+  }
+  .header-content {
+    padding-top: 30vh;
+  }
+  .header-content h2 span {
+    line-height: 40px;
+  }
+  .btn {
+    margin-left: 1rem;
+    margin-top: 1rem;
+  }
+  .intro {
+    padding-bottom: 35vh;
+  }
+
+  .intro-content {
+    height: 85vh;
+    display: block;
+    text-align: center;
+  }
+
+  .intro-content div {
+    width: auto;
+  }
+
+  .intro-text p {
+    line-height: 25px;
+  }
+  .services {
+    height: 90vh;
+    clip-path: polygon(0 0, 15% 0, 50% 12%, 85% 0, 100% 0, 100% 100%, 0 100%);
+    margin-top: -20vh;
+    padding-top: 20vh;
+    padding-bottom: 10vh;
+  }
+
+  .bucket {
+    width: auto;
+    margin-bottom: 3%;
+  }
+}
+/* mobile screen start */
+/* tablet screen start */
+@media (min-width: 701px) and (max-width: 1100px) {
+  .header-content {
+    padding-top: 30vh;
+    text-align: center;
+  }
+
+  .header-content h1,
+  .intro-content h1 {
+    font-size: 42px;
+  }
+  .header-content h2 span {
+    color: var(--primary-color);
+    line-height: 70px;
+  }
+
+  .btn {
+    margin-left: 1rem;
+  }
+  .intro {
+    background: #fff;
+    padding: 20vh 0;
+  }
+
+  .intro-text p {
+    line-height: 20px;
+  }
+  .services {
+    background-color: var(--primary-color);
+    height: 50vh;
+    clip-path: polygon(0 0, 15% 0, 50% 20%, 85% 0, 100% 0, 100% 100%, 0 100%);
+    margin-top: -18vh;
+    padding-top: 25vh;
+    padding-bottom: 10vh;
+  }
+  .contact {
+    background: #fff;
+    height: 50vh;
+    margin-top: -5vh;
+    padding: 10vh 0;
+  }
+}
+
+/* tablet screen start */
